@@ -40,8 +40,8 @@ export function Sidebar({ onFilterChange }: SidebarProps) {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem("token");
-    router("/signin");
+    // localStorage.removeItem("token");
+    router("/");
   };
 
   return (

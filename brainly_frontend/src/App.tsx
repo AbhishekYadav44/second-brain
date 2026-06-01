@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Signup } from './pages/Signup'
 import { Signin } from './pages/Sign'
 import DashBoard from './pages/DashBoard'
+import { LandingPage } from './pages/LandingPage'
 function App() {
   
 
@@ -16,7 +17,7 @@ function App() {
     <Route path='/signup' element={<Signup/>}/>
     <Route path='/signin' element={<Signin/>}/>
     <Route path='/dashboard' element={<DashBoard/>}/>
-    <Route path='/' element={<Signin/>}/>
+    <Route path='/' element={<LandingPage/>}/>
    </Routes>
    
    </BrowserRouter>
