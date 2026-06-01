@@ -40,7 +40,7 @@ export function Sidebar({ onFilterChange }: SidebarProps) {
   };
 
   const handleLogout = () => {
-    // localStorage.removeItem("token");
+    localStorage.removeItem("token");
     router("/");
   };
 

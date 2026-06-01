@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
+    const router  = useNavigate();
+
+    function redirectTo (){
+        router('/signin')
+    }
   return (
     <section className="flex flex-col items-center justify-center flex-1">
       <motion.div
@@ -51,7 +57,8 @@ export default function Hero() {
         
         className="mt-10"
       >
-        <button className="bg-black text-white px-8 py-3 rounded-xl hover:scale-105 transition-all duration-300">
+        <button onClick={redirectTo}
+        className="bg-black text-white px-8 py-3 rounded-xl hover:scale-105 transition-all duration-300">
           Get Started Free
         </button>
       </motion.div>
